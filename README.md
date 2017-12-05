@@ -1,5 +1,13 @@
 # ![postcss-assets](https://rawgit.com/assetsjs/postcss-assets/develop/media/postcss-assets.svg)
 
+
+A Fork of [Vadym Borodin](borodean@gmail.com)'s postcss-assets repository. The only change is encoding all types of file include svg use base64 encoding to improve compatibility in ie11 by using leyserplus-assets instead of assets.
+
+Because svg with `style` tag can't display well in ie11 if use a optimizing encoding to reduce size [](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)
+
+
+--------------
+
 PostCSS Assets is an asset manager for CSS. It isolates stylesheets from environmental changes, gets image sizes and inlines files.
 
 [![Unix Build Status][travis-badge]][travis] [![Windows Build Status][appveyor-badge]][appveyor] [![Coverage][coveralls-badge]][coveralls]
